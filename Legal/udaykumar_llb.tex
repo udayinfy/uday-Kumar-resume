@@ -1,0 +1,159 @@
+%% ============================================================
+%%  Uday Kumar — Legal Internship CV (ATS-Compliant, 1 Page)
+%%  Compiler : pdfLaTeX
+%% ============================================================
+\documentclass[10pt, a4paper]{article}
+
+% ── Packages ──────────────────────────────────────────────────
+% xcolor MUST be first so \definecolor works for all packages below
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage[a4paper, top=0.55in, bottom=0.55in,
+            left=0.65in, right=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{lmodern}           % Uncomment if available (Overleaf: always available)
+%\usepackage{microtype}         % Uncomment if lmodern is active
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref} % Must be loaded LAST
+
+% ── Colours ───────────────────────────────────────────────────
+\definecolor{darkblue}{HTML}{0F3460}
+\definecolor{darktext}{HTML}{1A1A2E}
+\definecolor{graytext}{HTML}{555555}
+
+% ── No page numbers ───────────────────────────────────────────
+\pagestyle{empty}
+
+% ── Section heading style ─────────────────────────────────────
+\titleformat{\section}
+  {\normalfont\bfseries\small\color{darkblue}}
+  {}{0em}{\MakeUppercase}
+  [\vspace{-9pt}\textcolor{darkblue}{\titlerule[0.6pt]}\vspace{4pt}]
+\titlespacing{\section}{0pt}{24pt}{4pt}
+
+% ── Bullet list style ─────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=2pt,
+  label=\textbullet
+}
+
+% ── Helper commands ───────────────────────────────────────────
+% Entry: bold title left, italic date right
+\newcommand{\cventry}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{\small\color{darktext}#1} &
+    \textit{\footnotesize\color{graytext}#2}
+  \end{tabularx}\vspace{1pt}%
+}
+
+% Sub-line (institution / detail)
+\newcommand{\cvsub}[1]{%
+  \noindent{\footnotesize\itshape\color{graytext}#1}\vspace{3pt}%
+}
+
+% ══════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── NAME ──────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries\color{darktext} UDAY KUMAR}\\[4pt]
+  {\footnotesize\color{graytext}
+    Delhi, India \quad|\quad
+    +91-9096440767 \quad|\quad
+    \href{mailto:uday06542@gmail.com}{uday06542@gmail.com}
+  }
+\end{center}
+
+\vspace{2pt}
+
+% ── OBJECTIVE ─────────────────────────────────────────────────
+\section{Professional Objective}
+{\small\color{darktext}
+Motivated and detail-oriented second-year LLB student at Faculty of Law, University of Delhi,
+seeking a legal internship to apply academic knowledge in Criminal Law, Intellectual Property
+Rights, and Family Law. Committed to contributing to legal research, drafting, and client
+advisory functions within a professional legal environment.
+}
+
+% ── EDUCATION ─────────────────────────────────────────────────
+\section{Education}
+
+\cventry{Bachelor of Laws (LLB) --- 3-Year Programme}{Aug 2024 -- Jun 2027 (Expected)}
+\cvsub{Faculty of Law, University of Delhi \quad|\quad Currently: 4th Semester (2nd Year)}
+\begin{itemize}
+  \item Relevant coursework: Law of Contracts, Constitutional Law, Law of Torts, Criminal Law,
+        Family Law, Intellectual Property Rights, Code of Civil Procedure
+  \item Consistently engaged in legal problem-solving exercises and case law analysis
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Senior Secondary Certificate (Class XII) --- CBSE}{2006}
+\cvsub{Percentage: 65 \quad|\quad Stream: Science (PCM)}
+
+\vspace{4pt}
+\cventry{Secondary School Certificate (Class X) --- CBSE}{2004}
+\cvsub{Percentage: 81}
+
+% ── CORE LEGAL COMPETENCIES ───────────────────────────────────
+\section{Core Legal Competencies}
+\begin{itemize}
+  \item \textbf{Legal Research \& Case Analysis:} Proficient in researching case laws, statutes,
+        and commentaries using SCC Online, Manupatra, and Indian Kanoon
+  \item \textbf{Legal Drafting:} Foundational skills in drafting plaints, written statements,
+        bail applications, and legal notices
+  \item \textbf{Areas of Interest:} Criminal Law \& Procedure (IPC, CrPC, BNS/BNSS 2023),
+        Intellectual Property Rights (Copyright, Trademarks, Patents), and Family Law
+        (Hindu Marriage Act, Succession Laws)
+  \item \textbf{Regulatory Awareness:} Familiarity with Bharatiya Nyaya Sanhita (BNS) 2023
+        and Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023 reforms
+\end{itemize}
+
+% ── TECHNICAL & PROFESSIONAL SKILLS ──────────────────────────
+\section{Technical \& Professional Skills}
+\begin{itemize}
+  \item \textbf{Legal Databases:} SCC Online, Manupatra, Indian Kanoon, AIR (All India Reporter)
+  \item \textbf{Languages:} English (Proficient), Hindi (Native)
+  \item \textbf{Computer Skills:} MS Word, MS Excel, Legal drafting tools, GenAI
+  \item \textbf{Soft Skills:} Analytical thinking, attention to detail, time management,
+        written and verbal communication
+\end{itemize}
+
+% ── ACADEMIC PROJECTS ─────────────────────────────────────────
+\section{Academic Projects \& Research}
+
+\cventry{Research Paper: Criminal Justice Reform in India}{2024--2025}
+\begin{itemize}
+  \item Conducted an analytical study on the transition from IPC/CrPC to BNS/BNSS, evaluating
+        implications for criminal procedure and rights of the accused
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Case Brief Assignment: Landmark IPR Judgments}{2025}
+\begin{itemize}
+  \item Prepared detailed case briefs on key Supreme Court decisions related to Copyright and
+        Trademark disputes in India
+\end{itemize}
+
+%% ── DECLARATION ───────────────────────────────────────────────
+%\section{Declaration}
+%{\small\itshape\color{darktext}
+%I hereby declare that all the information provided above is true and correct to the best of my
+%knowledge and belief.}
+
+%\vspace{6pt}
+%\noindent
+%\begin{tabularx}{\linewidth}{@{}X r@{}}
+%  {\small Place: Delhi} & {\small\textbf{Uday Kumar}}
+%\end{tabularx}
+
+\end{document}
+%% ============================================================
